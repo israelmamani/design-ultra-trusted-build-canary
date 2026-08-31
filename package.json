@@ -1,0 +1,14 @@
+{
+  "name": "design-ultra-trusted-build-canary",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Purpose-built, minimal canary repository. Its only purpose is to prove Design Ultra's real repository TRUSTED_BUILD path (clone -> PINNED_SHA verify -> Bubblewrap sandbox -> real npm ci -> real build -> real test). Not a real application.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "is-number": "7.0.0"
+  }
+}
